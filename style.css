@@ -1,0 +1,166 @@
+:root {
+    --primary-color: #02393D;
+    --secondary-color: #000000;
+    --third-color: #FFFFFF; 
+    --fourth-color: #bfd3e2;
+    --fifth-color: #031f34;
+    --sixth-color: #0a2427;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styling with grid & navigation menu */
+
+header {
+    display: grid;
+    grid-template-columns: 30% 70% ;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+}
+
+header img {
+    width: 3.5rem;
+    border: 0.1rem solid var(--secondary-color);
+    border-radius: 15rem;
+}
+
+header h2 {
+    display: none;
+}
+
+header nav {
+    list-style-type: none;
+
+}
+
+header nav li {
+    float: left;
+}
+
+header nav li a {
+    display: block;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+header nav li a:hover {
+    color: var(--fourth-color);
+}
+
+/* End of Header styling */
+
+/* Introduktion, forside billed og call to action knap */
+
+hr {
+    width: 90%;
+    margin-top: 0.8rem;
+    height: 1px;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+}
+
+.forsidetekst {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem;
+}
+
+.forsidetekst img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+}
+
+.forsidetekst .underbilledtekst h1 {
+    color: var(--primary-color);
+    font-weight: normal;
+    font-size: 1.7em;
+}
+
+.forsidetekst .underbilledtekst p {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-bottom: 2rem;
+}
+
+.knap {
+    background-color: var(--primary-color);
+    color:  var(--third-color);
+    text-decoration: none;
+    font-size: 1.4em;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    border-radius: 2rem;
+}
+
+.tekstdelt {
+    margin-top: 3rem;
+    margin-bottom: -1.5rem;
+}
+
+/* main indhold på forsiden */
+
+.mainindex {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem;
+}
+
+.mainindex img {
+    width: 100%;
+    
+}
+
+.mainindex .informationer h2 {
+    color: var(--primary-color);
+    font-weight: normal;
+    font-size: 1.7em;
+}
+
+.mainindex .informationer p {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    line-height: 1.4em;
+    
+}
+
+/* kontakt footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--primary-color);
+}
+
+footer .tekst h1 {
+    color: var(--third-color);
+    text-align: center;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+footer .kontaktlinks {
+    color: var(--third-color);
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer .kontaktlinks div h3 {
+    margin-bottom: 0.2rem;
+    font-weight: normal;
+    font-size: 1.3em;
+}
+
+footer .kontaktlinks a {
+    text-decoration: none;
+    color: var(--third-color);
+}
